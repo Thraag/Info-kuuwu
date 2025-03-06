@@ -1,20 +1,13 @@
 import Baner from "./components/Baner";
+import Button from "./components/Button";
 import Foco from "./components/Foco";
 import Section from "./components/Section";
 
 function App() {
   return (
-    <div>
+    <div className="mx-3 lg:mx-28">
       <Baner />
-      <Foco
-        titulo="¿Y dónde partimos?"
-        texto="Chile posee una rica tradición en la construcción, destacándose por más de un siglo. 
-                Tras el terremoto de Valparaíso en 1906, se desarrollaron sistemas resistentes a las duras condiciones naturales del país.
-                Esta fuerte relación con la arquitectura e ingeniería ha posicionado a Chile como referente mundial. 
-                Su calidad en especialistas, obras y trabajadores ha sido reconocida por editoriales como Gustavo Gili. 
-                Casa editorial arquitectónica de renombre considera a Chile y Japón entre los países de mayor interés arquitectónico 
-                y constructivo del mundo."
-      />
+
       <Foco
         titulo="¿Qué hacemos?"
         texto={
@@ -31,7 +24,7 @@ function App() {
             <br />
             <br />
             <span className="">
-              Pero vamos por partes, porque tengo mucho que contarte.
+              Pero vamos por partes, porque tenemos mucho que contarte.
             </span>
           </>
         }
@@ -59,7 +52,7 @@ function App() {
             Además,{" "}
             <strong>
               podrás subir tus experiencias con fotos y descripciones.
-            </strong>
+            </strong>{" "}
             Así, podrás mostrar tu trayectoria, ser contactado por contratantes
             y recibir notificaciones cuando proyectos públicos sean publicados.
             Tendrás la opción de contactar{" "}
@@ -76,16 +69,16 @@ function App() {
         texto={
           <>
             Aquí es donde Kuuwu destaca por sobre cualquier otra aplicación, y
-            la respuesta es la <strong>adaptabilidad.</strong>
+            la respuesta es la <strong>adaptabilidad</strong>.
             <br />
             <br />
             Verás, Kuuwu para los contratantes consta de dos flujos distintos
             que se adaptan a cada usuario. Por una parte, tenemos el{" "}
             <strong>flujo sencillo</strong>, fácil y rápido para personas
-            ocupadas que necesitan orientación.{" "}
-            <strong>Sin registrarte,</strong> en el buscador escribes lo que
-            necesitas, ya sea la reparación de las baldosas de tu casa o un
-            profesional en específico, y te mostraremos múltiples opciones.
+            ocupadas que necesitan orientación. <strong>Sin registrarte</strong>
+            , en el buscador escribes lo que necesitas, ya sea la reparación de
+            las baldosas de tu casa o un profesional en específico, y te
+            mostraremos múltiples opciones.
           </>
         }
       />
@@ -131,7 +124,7 @@ function App() {
             No exactamente. En nuestra aplicación usamos un PNL (Procesamiento
             de Lenguaje Natural) al que llamamos KuBot. En términos generales,
             es una parte de nuestra web que te permitirá hacer consultas sobre
-            construcción o dudas que tengas sobre el tema, desde preguntas
+            construcción o dudas que tengas sobre el tema: desde preguntas
             sencillas como qué profesional necesito para reparar el marco de mi
             puerta, hasta consultas más avanzadas sobre rendimiento de
             materiales, normativas NCh de construcción, orientación en
@@ -146,7 +139,7 @@ function App() {
         texto={
           <>
             Así es, logramos{" "}
-            <strong>centralizar todo en un mismo Dashboard</strong>, que irá
+            <strong>centralizar todo en un mismo dashboard</strong>, que irá
             mostrándote lo que solicites en el panel de la izquierda. En el
             mismo lugar, con la misma cuenta, podrás postular a proyectos, ver
             tus contrataciones con su control respectivo o elegir directamente a
@@ -160,27 +153,31 @@ function App() {
         }
       />
       <Section imageSrc="/img8.png" />
-    
+
       <Foco
         titulo="¡Mira! Tenemos una sorpresa de parte del equipo."
         texto={
           <>
             Gracias por tomarte el tiempo de leer este resumen de un trabajo en
-            el que cuatro ingenieros hemos invertido nuestro esfuerzo. Sin embargo, aún me faltaron
-            muchas cosas por mostrarte, como las cotizaciones que reciben los
-            contratantes y lo sencillo pero acertado que quedaron los perfiles
-            de los trabajadores, los cuales pueden revisar los contratantes.
+            el que cuatro ingenieros hemos invertido nuestro esfuerzo. Sin
+            embargo, aún faltan muchas cosas por mostrarte, como las
+            cotizaciones que reciben los contratantes y lo sencillo pero
+            acertado que quedaron los perfiles de los trabajadores, los cuales
+            pueden revisar los contratantes.
             <br />
             <br />
-            Dicho lo anterior, te tengo una buena noticia. <strong>Kuuwu esta regalando cuentas premium 
-            para los primeros 1000 usuarios en www.kuuwu.com.</strong>  Estamos
-            registrando a todos quienes quieran unirse a esta comunidad de
-            profesionales. Te invito a no quedarte afuera, ¡los cupos se
-            acabarán muy pronto!
+            Dicho lo anterior, te tengo una buena noticia:{" "}
+            <strong>
+              Kuuwu está regalando cuentas premium para los primeros 1000
+              usuarios en www.kuuwu.com
+            </strong>
+            . Estamos registrando a todos quienes quieran unirse a esta
+            comunidad de profesionales. Te invito a no quedarte afuera ya que
+            los cupos se acabarán muy pronto.
           </>
         }
       />
-      <Section imageSrc="/img9.png" />
+      <Button />
     </div>
   );
 }
